@@ -18,7 +18,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <button class="btn btn-success ms-auto">Create a new post</button>
+      <button class="btn btn-success ms-auto" data-bs-toggle="modal" data-bs-target="#newPostModal">Create a new post</button>
       <ul class="navbar-nav ms-2 mb-2 mb-lg-0">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -87,6 +87,28 @@
     <div class="card-body">
       <h5 class="card-title">2,891 Likes</h5>
       <p class="card-text">El Taj Mahal es un mausoleo de mármol blanco construido en el siglo XVII en Agra, India. Es considerado una de las maravillas del mundo moderno.</p>
+    </div>
+  </div>
+</div>
+<div class="modal" tabindex="-1" id="newPostModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Create a new post</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <label>Caption:</label>
+        <textarea class="form-control" placeholder="Add the caption of your post here"></textarea>
+        <div class="mt-2">
+          <button class="btn btn-outline-secondary"><i class="fa-solid fa-camera"></i></button>
+          <button class="btn btn-outline-secondary"><i class="fa-solid fa-location-dot"></i></button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
     </div>
   </div>
 </div>
